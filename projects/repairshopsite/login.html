@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+    // close on link click
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+});
+</script>
+
+<body>
+    <header class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+            PALM COVE TECH SUPPORT
+        </div>
+
+        <!-- Navigation Links -->
+        <nav>
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="policy.html">Policy</a></li>
+            <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <!-- Login Section -->
+        <div class="auth-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+     </header>
+
+    <main class="login-page">
+    <h1>Client Portal</h1>
+    <p>This feature is currently under development.</p>
+    <p>For now, please call or text for updates on your repair.</p>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <p>Palm Cove Tech Support</p>
+        <p>📞 +61 423 909 723 | ✉️ palmcovetechsupport@gmail.com</p>
+        <p>At your door service</p>
+        <p>© 2026 All rights reserved</p>
+    </footer>
+</body>
+</html>
